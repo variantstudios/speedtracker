@@ -45,4 +45,9 @@ parameters:
 #    metric: firstPaint
 #    max: 2000
 #    alerts: ["slackAlert"]
+budgets:
+  -
+    metric: fullyLoaded
+    max: 3000
+    alerts: ['emailAlert', 'slackAlert']
 ---
